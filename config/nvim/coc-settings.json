@@ -1,0 +1,24 @@
+{
+  "coc.preferences.formatOnSaveFiletypes": [
+    "json",
+    "jsonc",
+    "javascript",
+    "javascriptreact",
+    "typescript",
+    "typescriptreact",
+    "vim"
+  ],
+  "coc.preferences.formatOnType": true,
+  "eslint.autoFixOnSave": true,
+  "eslint.filetypes": [
+    "javascript",
+    "javascriptreact",
+    "typescript",
+    "typescriptreact"
+  ],
+  "explorer.icon.enableNerdfont": true,
+  "explorer.previewAction.onHover": false,
+  // this is how we configure coc-jest to use the correct settings:
+  // "jest.customFlags": ["--config=../jest.vim.js"],
+  "tsserver.formatOnType": true
+}
