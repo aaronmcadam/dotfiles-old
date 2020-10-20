@@ -19,6 +19,9 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     if exists('g:vscode')
       Plug 'machakann/vim-highlightedyank'
     else
+      " Themes
+      Plug 'mhartington/oceanic-next'
+
       " Enhance netrw
       Plug 'tpope/vim-vinegar'
       " Sneak
@@ -39,8 +42,6 @@ call plug#begin('~/.config/nvim/autoload/plugged')
       Plug 'alvan/vim-closetag'
       " Auto change tags
       Plug 'AndrewRadev/tagalong.vim'
-      " Themes
-      Plug 'sonph/onehalf', { 'rtp': 'vim' }
       " Intellisense
       Plug 'neoclide/coc.nvim', {'branch': 'release'}
       " Snippets

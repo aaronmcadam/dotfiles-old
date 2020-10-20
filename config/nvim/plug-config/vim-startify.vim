@@ -15,11 +15,12 @@ let g:startify_lists = [
           \ { 'type': 'bookmarks', 'header': ['   Bookmarks']                    },
           \ ]
 let g:startify_bookmarks = [
-            \ { 'c': '~/.config/nvim' },
-            \ { 'i': '~/.config/nvim/init.vim' },
-            \ { 'f': '~/.config/fish' },
-            \ { 'o': '~/.config/omf' },
             \ { 'h': '~/workspace/hydra' },
+            \ { 'd': '~/dotfiles' },
+            \ { 'c': '~/dotfiles/config/nvim' },
+            \ { 'i': '~/dotfiles/config/nvim/init.vim' },
+            \ { 'f': '~/dotfiles/config/fish' },
+            \ { 'o': '~/dotfiles/config/omf' },
             \ '~/workspace',
             \ '~/reference-implementations',
             \ '~/learning',

@@ -14,8 +14,10 @@ set expandtab                           " Converts tabs to spaces
 set smartindent                         " Makes indenting smart
 set autoindent                          " Good auto indent
 set laststatus=2                        " Always display the status line
-set number relativenumber               " Hybrid line numbers (absolute and relative)
 set cursorline                          " Enable highlighting of the current line
+set termguicolors                       " Enable true color
+set background=dark                     " tell vim what the background color looks like
+set number relativenumber               " Hybrid line numbers (absolute and relative)
 set nobackup                            " This is recommended by coc
 set nowritebackup                       " This is recommended by coc
 set cmdheight=2                         " Give more space for displaying messages.
