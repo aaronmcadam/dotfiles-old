@@ -12,7 +12,7 @@ set timeoutlen=500
 
 " Change the colours
 highlight default link WhichKey          Operator
-highlight default link WhichKeySeperator DiffAdded
+highlight default link WhichKeySeperator Identifier
 highlight default link WhichKeyGroup     Identifier
 highlight default link WhichKeyDesc      Function
 
