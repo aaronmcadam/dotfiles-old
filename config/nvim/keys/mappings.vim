@@ -3,13 +3,15 @@
 " map leader key
 let mapleader=" "
 nnoremap <Space> <Nop>
+" Easily clear highlighted search matches
+nmap <Leader><space> :nohlsearch<CR>
 
 " make it easier to write Ex commands
 nnoremap ; :
 
 " Map Ctrl + p to open fuzzy find (FZF)
 " TODO: Remove this when you configure FZF properly
-nnoremap <c-p> :Files<cr>
+nnoremap <C-p> :Files<CR>
 
 " Better indenting
 vnoremap < <gv
