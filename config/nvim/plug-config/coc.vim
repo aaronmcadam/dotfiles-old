@@ -11,6 +11,7 @@ let g:coc_global_extensions = [
   \ 'coc-snippets',
   \ 'coc-svg',
   \ 'coc-tsserver',
+  \ 'coc-yaml',
   \ ]
 
 " Use <c-space> to trigger completion.
