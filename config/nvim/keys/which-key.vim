@@ -7,6 +7,7 @@ vnoremap <silent> <leader> :silent <c-u> :silent WhichKeyVisual '<Space>'<CR>
 " Turn off floating window
 let g:which_key_use_floating_win = 0
 
+" Show the menu faster
 " By default timeoutlen is 1000 ms
 set timeoutlen=500
 
