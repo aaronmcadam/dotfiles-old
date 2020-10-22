@@ -1,6 +1,7 @@
 " coc settings
 
 let g:coc_global_extensions = [
+  \ 'coc-actions',
   \ 'coc-eslint',
   \ 'coc-explorer',
   \ 'coc-floaterm',
