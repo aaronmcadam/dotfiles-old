@@ -33,7 +33,7 @@ let g:which_key_map['h'] = ['<C-W>s'               , 'split below']
 let g:which_key_map['H'] = [':Startify'            , 'start screen']
 let g:which_key_map['n'] = [':let @/ = ""'         , 'remove search highlight']
 let g:which_key_map['p'] = [':Files'               , 'search files']
-let g:which_key_map['q'] = ['q'                    , 'quit']
+let g:which_key_map['q'] = [':qall!'               , 'quit']
 let g:which_key_map['T'] = [':Rg'                  , 'search text']
 let g:which_key_map['v'] = ['<C-W>v'               , 'split right']
 let g:which_key_map['w'] = ['w'                    , 'write']
@@ -197,10 +197,10 @@ let g:which_key_map.j = {
 " t is for terminal
 let g:which_key_map.t = {
       \ 'name' : '+terminal' ,
-      \ ';' : [':FloatermNew --wintype=normal --height=6' , 'terminal'],
-      \ 'f' : [':FloatermNew fzf'                         , 'fzf'],
-      \ 'n' : [':FloatermNew node'                        , 'node'],
-      \ 't' : [':FloatermToggle'                          , 'toggle'],
+      \ ';' : [':FloatermNew --wintype=normal --position=right' , 'terminal'],
+      \ 'f' : [':FloatermNew fzf'                                        , 'fzf'],
+      \ 'n' : [':FloatermNew node'                                       , 'node'],
+      \ 't' : [':FloatermToggle'                                         , 'toggle'],
       \ }
 
 " T is for tabline

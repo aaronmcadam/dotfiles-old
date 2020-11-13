@@ -25,7 +25,7 @@ set noswapfile                          " Turn off the swap file
 set colorcolumn=80                      " Show column
 set cursorcolumn                        " Highlight current column
 set cursorline                          " Highlight current line
-set clipboard=unnamedplus               " Copy and paste between vim and the system
+set clipboard=unnamed                   " Copy and paste between vim and the system
 
 " Having a longer `updatetime` (default is 4000 ms = 4 s) leads to noticeable
 " delays and poor user experience.
@@ -40,3 +40,9 @@ autocmd BufWritePre * :%s/\s\+$//e
 
 " Set relativenumber for netrw buffers
 let g:netrw_bufsettings = "noma nomod nu nobl nowrap ro"
+
+" Allow netrw to remove non-empty local directories
+let g:netrw_localrmdir="rm -r"
+
+" automatically rebalance windows on vim resize
+autocmd VimResized * :wincmd =

@@ -39,7 +39,7 @@ inoremap <C-l> <C-\><C-N><C-w>l
 tnoremap <Esc> <C-\><C-n>
 
 " Use alt + hjkl to resize windows
-" This requires iTerm to be configured to send "Esc+" for the left Option key.
+" This requires iTerm to be configured to send "Esc+" for the right Option key.
 " This configuration can be set in Preferences -> Profiles -> Keys.
 map <A-j> :resize -2<CR>
 map <A-k> :resize +2<CR>
