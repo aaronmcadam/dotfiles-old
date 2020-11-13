@@ -54,8 +54,12 @@ brew cleanup
 #   omf install https://github.com/jhillyerd/plugin-git
 # fi
 
+fancy_echo "Linking iCloud Drive..."
+ln -s ~/Library/Mobile\ Documents/com\~apple\~CloudDocs/ ~/iCloud
+ln -s ~/Library/Mobile\ Documents/com\~apple\~CloudDocs/Downloads/ ~/Downloads
+
 fancy_echo "Linking dotfiles..."
-rcup -d ~/dotfiles -v
+rcup -d ~/iCloud/Coding/dotfiles -v
 
 fancy_echo "Configuring asdf version manager..."
 
