@@ -59,7 +59,7 @@ ln -s ~/Library/Mobile\ Documents/com\~apple\~CloudDocs/ ~/iCloud
 ln -s ~/Library/Mobile\ Documents/com\~apple\~CloudDocs/Downloads/ ~/Downloads
 
 fancy_echo "Linking dotfiles..."
-rcup -d ~/iCloud/Coding/dotfiles -v
+rcup -d ~/dotfiles -v
 
 fancy_echo "Configuring asdf version manager..."
 
@@ -79,4 +79,11 @@ add_or_update_asdf_plugin "nodejs"
 
 # This will install languages based on .tool-versions
 asdf install
+
+fancy_echo "Configuring MacOS..."
+# This will set Safe Sleep to only occur when your battery is critically low.
+# It will also make sure the Safe Sleep timer implemented to comply with EU
+# power standards is disabled just in case.
+# @see https://www.reddit.com/r/mac/comments/2ehsjh/how_do_i_turn_off_safe_sleep_mode/
+sudo pmset -a hibernatemode 3 && sudo pmset -a autopoweroff 0
 
