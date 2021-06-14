@@ -184,23 +184,23 @@ let g:which_key_map.l = {
       \ 'Z' : [':CocEnable'                          , 'enable CoC'],
       \ }
 
-" j is for jest
-let g:which_key_map.j = {
-      \ 'name' : '+jest' ,
-      \ 'f' : [':TestFile'                           , 'file'],
-      \ 'l' : [':TestLast'                           , 'last'],
-      \ 'n' : [':TestNearest'                        , 'nearest'],
-      \ 's' : [':TestSuite'                          , 'suite'],
-      \ 'v' : [':TestVisit'                          , 'open test file'],
-      \ }
-
-" t is for terminal
-let g:which_key_map.t = {
+" i is for terminal (iTerm)
+let g:which_key_map.i = {
       \ 'name' : '+terminal' ,
       \ ';' : [':FloatermNew --wintype=normal --position=right' , 'terminal'],
       \ 'f' : [':FloatermNew fzf'                                        , 'fzf'],
       \ 'n' : [':FloatermNew node'                                       , 'node'],
       \ 't' : [':FloatermToggle'                                         , 'toggle'],
+      \ }
+
+" t is for test
+let g:which_key_map.t = {
+      \ 'name' : '+test' ,
+      \ 'f' : [':TestFile'                           , 'file'],
+      \ 'l' : [':TestLast'                           , 'last'],
+      \ 'n' : [':TestNearest'                        , 'nearest'],
+      \ 's' : [':TestSuite'                          , 'suite'],
+      \ 'v' : [':TestVisit'                          , 'open test file'],
       \ }
 
 " T is for tabline

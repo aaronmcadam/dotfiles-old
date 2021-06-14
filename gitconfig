@@ -17,7 +17,7 @@
 [diff]
 	tool = Kaleidoscope
 [core]
-	pager = diff-so-fancy | less --tabs=4 -RFX
+	pager = delta
 [color]
 	ui = true
 [color "diff-highlight"]
@@ -32,3 +32,10 @@
 	old = red bold
 	new = green bold
 	whitespace = red reverse
+[delta]
+    plus-style = "syntax #012800"
+    minus-style = "syntax #340001"
+    syntax-theme = Monokai Extended
+    navigate = true
+[interactive]
+    diffFilter = delta --color-only

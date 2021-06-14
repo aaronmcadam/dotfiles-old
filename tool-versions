@@ -1,5 +1,5 @@
 golang 1.15.2
 java adoptopenjdk-14.0.2+12.openj9-0.21.0
-nodejs 12.18.3
+nodejs 14.16.0
 python 3.8.6
 rust 1.42.0

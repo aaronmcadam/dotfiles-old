@@ -41,10 +41,11 @@ tnoremap <Esc> <C-\><C-n>
 " Use alt + hjkl to resize windows
 " This requires iTerm to be configured to send "Esc+" for the right Option key.
 " This configuration can be set in Preferences -> Profiles -> Keys.
-map <A-j> :resize -2<CR>
-map <A-k> :resize +2<CR>
-map <A-h> :vertical resize -2<CR>
-map <A-l> :vertical resize +2<CR>
+" Note: disabling for now because resizing is getting triggered somehow
+" map <A-j> :resize -2<CR>
+" map <A-k> :resize +2<CR>
+" map <A-h> :vertical resize -2<CR>
+" map <A-l> :vertical resize +2<CR>
 
 " Force a protected file to be saved
 cmap w!! w !sudo tee %

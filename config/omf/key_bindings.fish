@@ -32,13 +32,13 @@ abbr -a grbi git rebase --interactive
 abbr -a grbim git rebase --interactive master
 abbr -a grbil git rebase --interactive HEAD~2
 abbr -a s "git status -s"
-abbr -a h "hub"
-abbr -a hb "hub browse"
-abbr -a hc "hub clone"
-abbr -a hcp "hub clone -p"
+abbr -a h "gh"
+abbr -a hb "gh repo view --web"
+abbr -a hc "gh repo clone"
 
 # Tools
 abbr -a ydl "youtube-dl"
+alias tat "~/.bin/tat"
 
 # Hydra and Golem
 abbr -a build-golem-win "GOOS=windows GOARCH=x64 go build -o golem.exe"

@@ -86,4 +86,3 @@ fancy_echo "Configuring MacOS..."
 # power standards is disabled just in case.
 # @see https://www.reddit.com/r/mac/comments/2ehsjh/how_do_i_turn_off_safe_sleep_mode/
 sudo pmset -a hibernatemode 3 && sudo pmset -a autopoweroff 0
-
