@@ -1,30 +1,28 @@
 # General
 alias ... "cd ../../.."
+alias ag "rg"
 alias c "clear"
+alias cat "bat"
+alias change-bindings "v ~/.config/omf/key_bindings.fish"
 alias co "code"
-alias l "ls -lah"
+alias fr "fish"
+alias l "exa -l"
+alias ls "exa"
 alias r "rm"
 alias rr "rm -rf"
 alias v "nvim"
 alias v. "nvim ."
-alias fr "fish"
-alias change-bindings "v ~/.config/omf/key_bindings.fish"
-alias cat "bat"
-alias ag "rg"
 
 # JavaScript
 abbr -a n "npm install"
 abbr -a nt "npm test"
 abbr -a ntw "npm test -- --watch"
+abbr -a nx "yarn nx"
 abbr -a y "yarn"
-abbr -a yc "yarn typecheck"
 abbr -a ys "yarn start"
 abbr -a ysb "yarn storybook"
 abbr -a yt "yarn test"
 abbr -a ytw "yarn test --watch"
-abbr -a yta "yarn test:all"
-abbr -a yv "yarn validate"
-abbr -a yvc "yarn validate:ci"
 
 # Git
 alias gdb "git branch | fzf -m | xargs -n 1 git branch -D"
@@ -37,8 +35,4 @@ abbr -a hb "gh repo view --web"
 abbr -a hc "gh repo clone"
 
 # Tools
-abbr -a ydl "youtube-dl"
 alias tat "~/.bin/tat"
-
-# Hydra and Golem
-abbr -a build-golem-win "GOOS=windows GOARCH=x64 go build -o golem.exe"

@@ -22,10 +22,13 @@ tap "homebrew/cask-fonts"
 tap "neovim/neovim"
 tap "thoughtbot/formulae"
 
+brew "bat"
 brew "diff-so-fancy"
+brew "exa"
 brew "fish"
 brew "gh"
 brew "git"
+brew "git-delta"
 brew "git-extras"
 brew "neovim", args: ["HEAD"]
 brew "rcm"
