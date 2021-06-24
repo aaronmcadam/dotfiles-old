@@ -89,6 +89,8 @@ return require("packer").startup(function(use)
     -- Zen Mode
     use {"Pocco81/TrueZen.nvim", opt = true}
 
+    -- Custom
+    use {'felipec/vim-sanegx', opt = true}
     use {'tpope/vim-surround', opt = true}
 
     require_plugin("nvim-lspconfig")
@@ -121,6 +123,7 @@ return require("packer").startup(function(use)
     require_plugin('lsp-rooter.nvim')
     require_plugin("TrueZen.nvim")
     require_plugin("nvim-ts-context-commentstring")
+    require_plugin('vim-sanegx')
     require_plugin('vim-surround')
 
 
