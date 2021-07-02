@@ -36,3 +36,4 @@ abbr -a hc "gh repo clone"
 
 # Tools
 alias tat "~/.bin/tat"
+alias rc "rcup -d ~/dotfiles -v"
