@@ -31,7 +31,7 @@ abbr -a grbim git rebase --interactive master
 abbr -a grbil git rebase --interactive HEAD~2
 abbr -a s "git status -s"
 abbr -a h "gh"
-abbr -a hb "gh repo view --web"
+abbr -a hb "gh browse"
 abbr -a hc "gh repo clone"
 
 # Tools
