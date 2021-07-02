@@ -34,7 +34,7 @@ return require("packer").startup(function(use)
 
     -- TODO refactor all of this (for now it works, but yes I know it could be wrapped in a simpler function)
     use {"neovim/nvim-lspconfig"}
-    use {"glepnir/lspsaga.nvim", event = "BufRead"}
+    use {"glepnir/lspsaga.nvim"}
     use {"kabouzeid/nvim-lspinstall"}
     -- Telescope
     use {"nvim-lua/popup.nvim"}
@@ -72,8 +72,7 @@ return require("packer").startup(function(use)
 
         config = function()
             require("lv-gitsigns").config()
-        end,
-        event = "BufRead"
+        end
     }
 
     -- whichkey
