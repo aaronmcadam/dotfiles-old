@@ -273,7 +273,7 @@ return require("packer").startup(function(use)
     -- Search & Replace
     use {
         'windwp/nvim-spectre',
-        event = "BufRead",
+        -- event = "BufRead",
         config = function()
             require('spectre').setup()
         end,
