@@ -85,7 +85,7 @@ SETUVAR _fish_abbr_grbdi:git\x20rebase\x20master\x20\x2d\x2dinteractive
 SETUVAR _fish_abbr_grbdia:git\x20rebase\x20master\x20\x2d\x2dinteractive\x20\x2d\x2dautosquash
 SETUVAR _fish_abbr_grbi:git\x20rebase\x20\x2d\x2dinteractive
 SETUVAR _fish_abbr_grbil:git\x20rebase\x20\x2d\x2dinteractive\x20HEAD\x7e2
-SETUVAR _fish_abbr_grbim:git\x20rebase\x20\x2d\x2dinteractive\x20master
+SETUVAR _fish_abbr_grbim:git\x20rebase\x20\x2d\x2dinteractive\x20main
 SETUVAR _fish_abbr_grbm:git\x20rebase\x20master
 SETUVAR _fish_abbr_grbmi:git\x20rebase\x20master\x20\x2d\x2dinteractive
 SETUVAR _fish_abbr_grbmia:git\x20rebase\x20master\x20\x2d\x2dinteractive\x20\x2d\x2dautosquash
@@ -118,7 +118,7 @@ SETUVAR _fish_abbr_gunignore:git\x20update\x2dindex\x20\x2d\x2dno\x2dassume\x2du
 SETUVAR _fish_abbr_gup:git\x20pull\x20\x2d\x2drebase
 SETUVAR _fish_abbr_gwch:git\x20whatchanged\x20\x2dp\x20\x2d\x2dabbrev\x2dcommit\x20\x2d\x2dpretty\x3dmedium
 SETUVAR _fish_abbr_h:gh
-SETUVAR _fish_abbr_hb:gh\x20repo\x20view\x20\x2d\x2dweb
+SETUVAR _fish_abbr_hb:gh\x20browse
 SETUVAR _fish_abbr_hc:gh\x20repo\x20clone
 SETUVAR _fish_abbr_hcp:hub\x20clone\x20\x2dp
 SETUVAR _fish_abbr_n:npm\x20install
@@ -128,6 +128,7 @@ SETUVAR _fish_abbr_nx:yarn\x20nx
 SETUVAR _fish_abbr_s:git\x20status\x20\x2ds
 SETUVAR _fish_abbr_y:yarn
 SETUVAR _fish_abbr_yc:yarn\x20typecheck
+SETUVAR _fish_abbr_yd:yarn\x20dev
 SETUVAR _fish_abbr_ydl:youtube\x2ddl
 SETUVAR _fish_abbr_ys:yarn\x20start
 SETUVAR _fish_abbr_ysb:yarn\x20storybook

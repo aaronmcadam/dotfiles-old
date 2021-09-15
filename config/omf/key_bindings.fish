@@ -19,6 +19,7 @@ abbr -a nt "npm test"
 abbr -a ntw "npm test -- --watch"
 abbr -a nx "yarn nx"
 abbr -a y "yarn"
+abbr -a yd "yarn dev"
 abbr -a ys "yarn start"
 abbr -a ysb "yarn storybook"
 abbr -a yt "yarn test"
@@ -27,7 +28,7 @@ abbr -a ytw "yarn test --watch"
 # Git
 alias gdb "git branch | fzf -m | xargs -n 1 git branch -D"
 abbr -a grbi git rebase --interactive
-abbr -a grbim git rebase --interactive master
+abbr -a grbim git rebase --interactive main
 abbr -a grbil git rebase --interactive HEAD~2
 abbr -a s "git status -s"
 abbr -a h "gh"
