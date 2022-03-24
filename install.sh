@@ -16,37 +16,7 @@ fi
 fancy_echo "Updating Homebrew formulae..."
 
 brew update
-brew bundle --file=- <<EOF
-
-tap "homebrew/cask-fonts"
-tap "neovim/neovim"
-tap "thoughtbot/formulae"
-
-brew "bat"
-brew "diff-so-fancy"
-brew "exa"
-brew "fish"
-brew "gh"
-brew "git"
-brew "git-delta"
-brew "git-extras"
-brew "neovim", args: ["HEAD"]
-brew "rcm"
-brew "reattach-to-user-namespace"
-brew "rg"
-brew "tmux"
-brew "tree"
-brew "yarn"
-brew "zoxide", args: ["force"]
-
-cask "discord"
-cask "docker"
-cask "slack"
-cask "spotify"
-
-cask "font-fira-code-nerd-font"
-EOF
-
+brew bundle
 brew cleanup
 
 # TODO: We need to change the shell to fish to access the omf command.
@@ -56,10 +26,6 @@ brew cleanup
 #   curl -L https://get.oh-my.fish | fish
 #   omf install https://github.com/jhillyerd/plugin-git
 # fi
-
-fancy_echo "Linking iCloud Drive..."
-ln -s ~/Library/Mobile\ Documents/com\~apple\~CloudDocs/ ~/iCloud
-ln -s ~/Library/Mobile\ Documents/com\~apple\~CloudDocs/Downloads/ ~/Downloads
 
 fancy_echo "Linking dotfiles..."
 rcup -d ~/dotfiles -v
@@ -76,16 +42,7 @@ add_or_update_asdf_plugin() {
   fi
 }
 
-add_or_update_asdf_plugin "golang"
-add_or_update_asdf_plugin "java"
 add_or_update_asdf_plugin "nodejs"
 
 # This will install languages based on .tool-versions
 asdf install
-
-fancy_echo "Configuring MacOS..."
-# This will set Safe Sleep to only occur when your battery is critically low.
-# It will also make sure the Safe Sleep timer implemented to comply with EU
-# power standards is disabled just in case.
-# @see https://www.reddit.com/r/mac/comments/2ehsjh/how_do_i_turn_off_safe_sleep_mode/
-sudo pmset -a hibernatemode 3 && sudo pmset -a autopoweroff 0
