@@ -1,2 +1,2 @@
 DOTFILES_DIRS="$HOME/dotfiles"
-EXCLUDES="README.md install.sh iterm"
+EXCLUDES="README.md install.sh iterm Brewfile Brewfile.lock.json"
