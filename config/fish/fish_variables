@@ -3,7 +3,7 @@
 SETUVAR __fish_init_2_39_8:\x1d
 SETUVAR __fish_init_2_3_0:\x1d
 SETUVAR __fish_init_3_x:\x1d
-SETUVAR __fish_initialized:3100
+SETUVAR __fish_initialized:3400
 SETUVAR _fish_abbr_build_2D_golem_2D_win:GOOS\x3dwindows\x20GOARCH\x3dx64\x20go\x20build\x20\x2do\x20golem\x2eexe
 SETUVAR _fish_abbr_g:git
 SETUVAR _fish_abbr_ga:git\x20add
@@ -139,7 +139,6 @@ SETUVAR _fish_abbr_ytw:yarn\x20test\x20\x2d\x2dwatch
 SETUVAR _fish_abbr_yv:yarn\x20validate
 SETUVAR _fish_abbr_yvc:yarn\x20validate\x3aci
 SETUVAR _fish_abbr_za:zoxide\x20add
-SETUVAR _fish_abbr_zi:z\x20\x2di
 SETUVAR _fish_abbr_zq:zoxide\x20query
 SETUVAR _fish_abbr_zr:zoxide\x20remove
 SETUVAR fish_color_autosuggestion:555\x1ebrblack
@@ -171,6 +170,7 @@ SETUVAR fish_pager_color_completion:\x1d
 SETUVAR fish_pager_color_description:B3A06D\x1eyellow
 SETUVAR fish_pager_color_prefix:white\x1e\x2d\x2dbold\x1e\x2d\x2dunderline
 SETUVAR fish_pager_color_progress:brwhite\x1e\x2d\x2dbackground\x3dcyan
+SETUVAR fish_pager_color_selected_background:\x2dr
 SETUVAR fish_user_paths:/usr/local/opt/fzf/bin
 SETUVAR pure_begin_prompt_with_current_directory:true
 SETUVAR pure_color_command_duration:pure_color_warning
