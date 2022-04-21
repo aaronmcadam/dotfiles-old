@@ -41,4 +41,5 @@ cask "slack"
 cask "spotify"
 cask "todoist"
 cask "visual-studio-code"
-cask "zoom"
+# Installed by admin
+# cask "zoom"
