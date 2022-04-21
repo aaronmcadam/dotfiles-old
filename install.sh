@@ -43,6 +43,8 @@ add_or_update_asdf_plugin() {
 }
 
 add_or_update_asdf_plugin "nodejs"
+# For AWS CLI
+add_or_update_asdf_plugin "python"
 
 # This will install languages based on .tool-versions
 asdf install
