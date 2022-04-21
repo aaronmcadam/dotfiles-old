@@ -19,14 +19,6 @@ brew update
 brew bundle
 brew cleanup
 
-# TODO: We need to change the shell to fish to access the omf command.
-# We might want to run this after the initial install
-# if ! command -v omf >/dev/null; then
-#   fancy_echo "Installing oh-my-fish..."
-#   curl -L https://get.oh-my.fish | fish
-#   omf install https://github.com/jhillyerd/plugin-git
-# fi
-
 fancy_echo "Linking dotfiles..."
 rcup -d ~/dotfiles -v
 
@@ -51,3 +43,14 @@ asdf install
 
 # Install Yarn with NPM
 npm install --global yarn
+
+# TODO: We need to change the shell to fish to access the omf command.
+# fish_add_path /opt/homebrew/bin
+# echo "/opt/homebrew/bin/fish" | sudo tee -a /etc/shells
+# chsh -s /opt/homebrew/bin/fish
+# We might want to run this after the initial install
+# if ! command -v omf >/dev/null; then
+#   fancy_echo "Installing oh-my-fish..."
+#   curl -L https://get.oh-my.fish | fish
+#   omf install https://github.com/jhillyerd/plugin-git
+# fi
