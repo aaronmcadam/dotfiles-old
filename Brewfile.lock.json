@@ -5,7 +5,7 @@
         "revision": "e3d548d327e050a96c9f8b5a0b40f8a017905128"
       },
       "homebrew/cask": {
-        "revision": "801f83d71811adf6f6254739fd2302bf1db10625"
+        "revision": "763a50c0b5eea1131064f765a1d77d395956e764"
       },
       "homebrew/cask-drivers": {
         "revision": "047eb3576a745908156523dcc3e96e100c34007c"
@@ -14,7 +14,7 @@
         "revision": "11e62b7ef8da33f52f186785a1486fd063072dd6"
       },
       "homebrew/core": {
-        "revision": "be16fff5da31587324df4e40979ed8c2edb87b58"
+        "revision": "de0a3e24e9caeff9028f13d74dc41ce59fdd1368"
       },
       "homebrew/cask-fonts": {
         "revision": "cb6495716b70b0f89b730121c98491f02352266e"
@@ -452,7 +452,7 @@
         }
       },
       "neovim": {
-        "version": "0.7.0",
+        "version": "HEAD-0c6ad03",
         "bottle": {
           "rebuild": 0,
           "root_url": "https://ghcr.io/v2/homebrew/core",
@@ -488,6 +488,11 @@
               "sha256": "0676404738239fdb2d03a2af7c5c381240ad7beaa7b42038d8e2b11519357163"
             }
           }
+        },
+        "options": {
+          "args": [
+            "HEAD"
+          ]
         }
       },
       "ripgrep": {
@@ -804,7 +809,7 @@
         }
       },
       "raycast": {
-        "version": "1.36.0",
+        "version": "1.36.1",
         "options": {
           "full_name": "raycast"
         }
@@ -906,7 +911,7 @@
       "monterey": {
         "HOMEBREW_VERSION": "3.5.2",
         "HOMEBREW_PREFIX": "/opt/homebrew",
-        "Homebrew/homebrew-core": "be16fff5da31587324df4e40979ed8c2edb87b58",
+        "Homebrew/homebrew-core": "de0a3e24e9caeff9028f13d74dc41ce59fdd1368",
         "CLT": "13.4.0.0.1.1651278267",
         "Xcode": "13.4",
         "macOS": "12.4"

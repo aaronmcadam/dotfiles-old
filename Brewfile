@@ -16,7 +16,7 @@ brew "gh"
 brew "git"
 brew "git-delta"
 brew "jq"
-brew "neovim"
+brew "neovim", args: ['HEAD']
 brew "rcm"
 brew "ripgrep"
 brew "shellcheck"
