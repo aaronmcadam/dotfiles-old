@@ -1,2 +1,2 @@
--- General
-require('settings')
+require "user.options"
+require "user.keymaps"
