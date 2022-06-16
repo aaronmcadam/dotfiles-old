@@ -50,6 +50,7 @@ return packer.startup(function(use)
   use "kyazdani42/nvim-web-devicons" -- Icons
   use "kyazdani42/nvim-tree.lua" -- A file explorer tree
   use "Mephistophiles/surround.nvim" -- Surround text objects
+  use "antoinemadec/FixCursorHold.nvim" -- This is needed to fix lsp doc highlight
 
   -- Completion
   use "hrsh7th/nvim-cmp" -- The completion plugin
@@ -85,6 +86,9 @@ return packer.startup(function(use)
   -- DAP debugging
   -- use "mfussenegger/nvim-dap" -- DAP (Debug Adapter Protocol)
   -- use "rcarriga/nvim-dap-ui" -- A UI for nvim-dap 
+
+  -- Testing
+  use "David-Kunz/jester" -- Test runner
 
   -- Colorschemes
   use "folke/tokyonight.nvim"

@@ -37,3 +37,4 @@ keymap("n", "<Leader>fb", ":Telescope buffers<CR>", opts)
 -- Leader mappings
 keymap("n", "<Leader>e", ":NvimTreeToggle<CR>", opts)
 keymap("n", "<Leader>q", ":Bdelete<CR>", opts)
+keymap("n", "<Leader>t", ":lua require('jester').run_file()<CR>", opts)
