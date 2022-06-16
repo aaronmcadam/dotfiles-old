@@ -9,6 +9,9 @@ vim.g.mapleader = " "
 vim.g.maplocalleader = " "
 
 -- Normal mode --
+-- Avoid invalid commands by avoiding the shift key for commands
+keymap("n", ";", ":", opts)
+
 -- Better window navigation
 keymap("n", "<C-h>", "<C-w>h", opts)
 keymap("n", "<C-j>", "<C-w>j", opts)
