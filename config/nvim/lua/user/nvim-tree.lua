@@ -4,4 +4,3 @@ if not status_ok then
 end
 
 nvim_tree.setup()
-

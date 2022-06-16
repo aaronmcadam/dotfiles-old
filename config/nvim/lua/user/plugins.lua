@@ -66,7 +66,7 @@ return packer.startup(function(use)
   -- use "RRethy/vim-illuminate" -- automatically highlight other uses of the current word under the cursor
 
   -- Telescope
-  -- use "nvim-telescope/telescope.nvim"
+  use "nvim-telescope/telescope.nvim"
 
   -- Treesitter
   use {

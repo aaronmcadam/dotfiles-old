@@ -25,6 +25,9 @@ keymap("n", "<A-Right>", ":vertical resize +2<CR>", opts)
 keymap("n", "<A-j>", "<Esc>:m .+1<CR>==gi", opts)
 keymap("n", "<A-k>", "<Esc>:m .-2<CR>==gi", opts)
 
+-- Telescope
+keymap("n", "<C-p>", "<cmd>lua require('telescope.builtin').find_files()<cr>", opts)
+
 -- Leader mappings
 keymap("n", "<Leader>e", ":NvimTreeToggle<CR>", opts)
 keymap("n", "<Leader>q", ":Bdelete<CR>", opts)
