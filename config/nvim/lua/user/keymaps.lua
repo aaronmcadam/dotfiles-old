@@ -21,12 +21,15 @@ keymap("n", "<A-Down>", ":resize +2<CR>", opts)
 keymap("n", "<A-Left>", ":vertical resize -2<CR>", opts)
 keymap("n", "<A-Right>", ":vertical resize +2<CR>", opts)
 
--- Move text up and down
-keymap("n", "<A-j>", "<Esc>:m .+1<CR>==gi", opts)
-keymap("n", "<A-k>", "<Esc>:m .-2<CR>==gi", opts)
-
 -- Telescope
-keymap("n", "<C-p>", "<cmd>lua require('telescope.builtin').find_files()<cr>", opts)
+-- Find file
+keymap("n", "<Leader>ff", ":Telescope find_files<CR>", opts)
+-- Find text
+keymap("n", "<Leader>ft", ":Telescope live_grep<CR>", opts)
+-- Find word
+keymap("n", "<Leader>fw", ":Telescope grep_string<CR>", opts)
+-- Find buffer
+keymap("n", "<Leader>fb", ":Telescope buffers<CR>", opts)
 
 -- Leader mappings
 keymap("n", "<Leader>e", ":NvimTreeToggle<CR>", opts)

@@ -52,16 +52,19 @@ return packer.startup(function(use)
   use "Mephistophiles/surround.nvim" -- Surround text objects
 
   -- Completion
-  -- use "hrsh7th/nvim-cmp" -- The completion plugin
-  -- use "hrsh7th/cmp-buffer" -- buffer completions
-  -- use "hrsh7th/cmp-path" -- path completions
-  -- use "hrsh7th/cmp-nvim-lsp" --LSP
-  -- use "hrsh7th/cmp-nvim-lua" --Lua
-  -- use "hrsh7th/cmp-emoji" -- Emoji
+  use "hrsh7th/nvim-cmp" -- The completion plugin
+  use "hrsh7th/cmp-buffer" -- buffer completions
+  use "hrsh7th/cmp-path" -- path completions
+  use "hrsh7th/cmp-nvim-lsp" --LSP
+  use "hrsh7th/cmp-nvim-lua" --Lua
+
+  -- Snippets
+  use "L3MON4D3/LuaSnip" --snippet engine
 
   -- LSP programming language support
-  -- use "neovim/nvim-lspconfig" -- enable LSP
-  -- use "williamboman/nvim-lsp-installer" -- simple to use language server installer
+  use "neovim/nvim-lspconfig" -- enable LSP
+  use "williamboman/nvim-lsp-installer" -- simple to use language server installer
+  use "b0o/SchemaStore.nvim" -- JSON schemas
   -- use "jose-elias-alvarez/null-ls.nvim" -- for formatters and linters
   -- use "RRethy/vim-illuminate" -- automatically highlight other uses of the current word under the cursor
 
