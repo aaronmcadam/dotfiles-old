@@ -41,11 +41,11 @@ packer.init {
 -- Install your plugins here
 return packer.startup(function(use)
   use "wbthomason/packer.nvim" -- Have packer manage itself
-  use "lewis6991/impatient.nvim" -- Speed up loading Lua modules 
+  use "lewis6991/impatient.nvim" -- Speed up loading Lua modules
   use "nvim-lua/popup.nvim" -- An implementation of the Popup API from vim in Neovim
   use "nvim-lua/plenary.nvim" -- Useful lua functions used ny lots of plugins
-  use "windwp/nvim-autopairs" -- Autopairs, integrates with both cmp and treesitter
   use "numToStr/Comment.nvim" -- Commenting
+  use "JoosepAlviste/nvim-ts-context-commentstring" -- TSX support in comments
   use "moll/vim-bbye" -- delete buffers (close files) without closing your windows or messing up your layout.
   use "kyazdani42/nvim-web-devicons" -- Icons
   use "kyazdani42/nvim-tree.lua" -- A file explorer tree
@@ -58,6 +58,7 @@ return packer.startup(function(use)
   use "hrsh7th/cmp-path" -- path completions
   use "hrsh7th/cmp-nvim-lsp" --LSP
   use "hrsh7th/cmp-nvim-lua" --Lua
+  use "onsails/lspkind.nvim" -- vscode-like pictograms for neovim lsp completion items
 
   -- Snippets
   use "L3MON4D3/LuaSnip" --snippet engine
@@ -66,26 +67,30 @@ return packer.startup(function(use)
   use "neovim/nvim-lspconfig" -- enable LSP
   use "williamboman/nvim-lsp-installer" -- simple to use language server installer
   use "b0o/SchemaStore.nvim" -- JSON schemas
-  -- use "jose-elias-alvarez/null-ls.nvim" -- for formatters and linters
-  -- use "RRethy/vim-illuminate" -- automatically highlight other uses of the current word under the cursor
+  use "jose-elias-alvarez/null-ls.nvim" -- for formatters and linters
 
   -- Telescope
   use "nvim-telescope/telescope.nvim"
+  use "nvim-telescope/telescope-file-browser.nvim"
+  use { 'nvim-telescope/telescope-fzf-native.nvim',
+    run = 'make'
+  }
 
   -- Treesitter
   use {
     "nvim-treesitter/nvim-treesitter",
     run = ":TSUpdate",
   }
+  use "windwp/nvim-autopairs" -- Autopairs, integrates with both cmp and treesitter
   use "windwp/nvim-ts-autotag"
 
   -- Git
-  use "lewis6991/gitsigns.nvim" -- Git integration for buffers 
+  use "lewis6991/gitsigns.nvim" -- Git integration for buffers
   -- lazygit, fugitive, or something similar?
 
   -- DAP debugging
   -- use "mfussenegger/nvim-dap" -- DAP (Debug Adapter Protocol)
-  -- use "rcarriga/nvim-dap-ui" -- A UI for nvim-dap 
+  -- use "rcarriga/nvim-dap-ui" -- A UI for nvim-dap
 
   -- Testing
   use "David-Kunz/jester" -- Test runner

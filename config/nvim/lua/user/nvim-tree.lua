@@ -3,4 +3,5 @@ if not status_ok then
   return
 end
 
-nvim_tree.setup()
+-- Disable while trying Telescope file_browser for everything
+-- nvim_tree.setup()

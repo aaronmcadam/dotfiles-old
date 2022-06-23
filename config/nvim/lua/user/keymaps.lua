@@ -26,15 +26,17 @@ keymap("n", "<A-Right>", ":vertical resize +2<CR>", opts)
 
 -- Telescope
 -- Find file
-keymap("n", "<Leader>ff", ":Telescope find_files<CR>", opts)
+keymap("n", "<Leader>ff", "<cmd>lua require('user.telescope').project_files()<CR>", opts)
+-- File viewer
+keymap("n", "<Leader>fv", "<cmd>Telescope file_browser<CR>", opts)
 -- Find text
-keymap("n", "<Leader>ft", ":Telescope live_grep<CR>", opts)
+keymap("n", "<Leader>ft", "<cmd>Telescope live_grep<CR>", opts)
 -- Find word
-keymap("n", "<Leader>fw", ":Telescope grep_string<CR>", opts)
+keymap("n", "<Leader>fw", "<cmd>Telescope grep_string<CR>", opts)
 -- Find buffer
-keymap("n", "<Leader>fb", ":Telescope buffers<CR>", opts)
+keymap("n", "<Leader>fb", "<cmd>Telescope buffers<CR>", opts)
 
 -- Leader mappings
-keymap("n", "<Leader>e", ":NvimTreeToggle<CR>", opts)
-keymap("n", "<Leader>q", ":Bdelete<CR>", opts)
-keymap("n", "<Leader>t", ":lua require('jester').run_file()<CR>", opts)
+-- keymap("n", "<Leader>e", "<cmd>NvimTreeToggle<CR>", opts)
+keymap("n", "<Leader>q", "<cmd>Bdelete<CR>", opts)
+keymap("n", "<Leader>t", "<cmd>lua require('jester').run_file()<CR>", opts)
