@@ -10,6 +10,15 @@ telescope.setup({
     },
     git_files = {
       theme = "ivy",
+    },
+    live_grep = {
+      theme = "ivy"
+    },
+    grep_string = {
+      theme = "ivy"
+    },
+    buffers = {
+      theme = "ivy"
     }
   },
   extensions = {
@@ -17,7 +26,9 @@ telescope.setup({
       theme = "ivy",
       -- disable netrw and use telescope-file-browser in its place
       hijack_netrw = true,
-      hidden = true
+      hidden = true,
+      -- Open browser from within the folder of the current buffer
+      path = "%:p:h"
     }
   }
 })
