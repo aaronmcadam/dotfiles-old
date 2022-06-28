@@ -85,8 +85,9 @@ return packer.startup(function(use)
   use "windwp/nvim-ts-autotag"
 
   -- Git
+  use "akinsho/toggleterm.nvim" -- Manage terminal windows
   use "lewis6991/gitsigns.nvim" -- Git integration for buffers
-  -- lazygit, fugitive, or something similar?
+
 
   -- DAP debugging
   -- use "mfussenegger/nvim-dap" -- DAP (Debug Adapter Protocol)
