@@ -49,7 +49,7 @@ return packer.startup(function(use)
   use "moll/vim-bbye" -- delete buffers (close files) without closing your windows or messing up your layout.
   use "kyazdani42/nvim-web-devicons" -- Icons
   use "kyazdani42/nvim-tree.lua" -- A file explorer tree
-  use "Mephistophiles/surround.nvim" -- Surround text objects
+  use "ur4ltz/surround.nvim" -- Surround text objects
   use "antoinemadec/FixCursorHold.nvim" -- This is needed to fix lsp doc highlight
 
   -- Completion
