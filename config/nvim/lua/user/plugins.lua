@@ -51,6 +51,7 @@ return packer.startup(function(use)
   use "kyazdani42/nvim-tree.lua" -- A file explorer tree
   use "ur4ltz/surround.nvim" -- Surround text objects
   use "antoinemadec/FixCursorHold.nvim" -- This is needed to fix lsp doc highlight
+  use "goolord/alpha-nvim" -- Dashboard
 
   -- Completion
   use "hrsh7th/nvim-cmp" -- The completion plugin
