@@ -52,6 +52,7 @@ return packer.startup(function(use)
   use "ur4ltz/surround.nvim" -- Surround text objects
   use "antoinemadec/FixCursorHold.nvim" -- This is needed to fix lsp doc highlight
   use "goolord/alpha-nvim" -- Dashboard
+  use "ahmedkhalf/project.nvim" -- Projects
 
   -- Completion
   use "hrsh7th/nvim-cmp" -- The completion plugin
@@ -96,6 +97,7 @@ return packer.startup(function(use)
 
   -- Testing
   use "David-Kunz/jester" -- Test runner
+  -- use "nvim-neotest/neotest"
 
   -- Colorschemes
   use "folke/tokyonight.nvim"
