@@ -26,6 +26,7 @@ telescope.setup({
       theme = "ivy",
       -- disable netrw and use telescope-file-browser in its place
       hijack_netrw = true,
+      -- show hidden files
       hidden = true,
       -- Open browser from within the folder of the current buffer
       path = "%:p:h"
