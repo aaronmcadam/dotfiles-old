@@ -14,7 +14,7 @@ alias ls "exa"
 alias r "rm"
 alias rr "rm -rf"
 alias v "nvim"
-alias v. "nvim ."
+alias v. "nvim"
 alias zz "z -"
 
 # JavaScript
