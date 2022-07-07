@@ -53,6 +53,7 @@ return packer.startup(function(use)
   use "antoinemadec/FixCursorHold.nvim" -- This is needed to fix lsp doc highlight
   use "goolord/alpha-nvim" -- Dashboard
   use "ahmedkhalf/project.nvim" -- Projects
+  use "nvim-lualine/lualine.nvim" -- Status line
 
   -- Completion
   use "hrsh7th/nvim-cmp" -- The completion plugin
