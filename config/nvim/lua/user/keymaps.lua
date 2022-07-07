@@ -26,7 +26,7 @@ keymap("n", "<A-Right>", ":vertical resize +2<CR>", opts)
 
 -- Telescope
 -- Find file
-keymap("n", "<Leader>ff", "<cmd>lua require('user.telescope').project_files()<CR>", opts)
+keymap("n", "<Leader>ff", "<cmd>Telescope find_files<CR>", opts)
 -- File viewer
 keymap("n", "<Leader>fv", "<cmd>Telescope file_browser<CR>", opts)
 -- Find text

@@ -44,6 +44,7 @@ local M = {}
 -- So we're trying git_files for a while to see some hidden files that are tracked by git.
 -- This function offers the best of both worlds, where we fall back to
 -- find_files if git_files fails when there's no `.git` directory.
+-- Not using this for now because when we add new files, we can't find them until we add them to git.
 M.project_files = function()
   local ok = pcall(require("telescope.builtin").git_files)
 
