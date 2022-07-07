@@ -29,3 +29,6 @@ alt - return : yabai -m window --toggle zoom-fullscreen
 
 # balance size of windows
 cmd + alt - b : yabai -m space --balance
+
+# restart yabai
+cmd + alt - r : brew services restart yabai
