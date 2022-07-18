@@ -26,7 +26,7 @@ keymap("n", "<A-Right>", ":vertical resize +2<CR>", opts)
 
 -- Telescope
 -- Find file
-keymap("n", "<Leader>ff", "<cmd>Telescope find_files<CR>", opts)
+keymap("n", "<Leader>ff", "<cmd>lua require('user.telescope').project_files()<CR>", opts)
 -- File viewer
 keymap("n", "<Leader>fv", "<cmd>Telescope file_browser<CR>", opts)
 -- Find text
@@ -37,10 +37,15 @@ keymap("n", "<Leader>fw", "<cmd>Telescope grep_string<CR>", opts)
 keymap("n", "<Leader>fb", "<cmd>Telescope buffers<CR>", opts)
 
 -- Leader mappings
-keymap("n", "<Leader>e", "<cmd>NvimTreeToggle<CR>", opts)
+keymap("n", "<Leader>e", "<cmd>NvimTreeFindFileToggle<CR>", opts)
 keymap("n", "<leader>gg", "<cmd>lua _LAZYGIT_TOGGLE()<CR>", opts)
 keymap("n", "<Leader>q", "<cmd>Bdelete<CR>", opts)
-keymap("n", "<Leader>tt", '<cmd>lua require("neotest").run.run(vim.fn.expand("%"))<CR>', opts)
+keymap("n", "<Leader>r", '<cmd>lua require("user.utils").reload_config()<CR>', opts)
+keymap("n", "<Leader>tt", '<cmd>lua require("neotest").run.run()<CR>', opts)
+keymap("n", "<Leader>tf", '<cmd>lua require("neotest").run.run(vim.fn.expand("%"))<CR>', opts)
 keymap("n", "<Leader>tl", '<cmd>lua require("neotest").run.run_last()<CR>', opts)
 keymap("n", "<Leader>ts", '<cmd>lua require("neotest").summary.toggle()<CR>', opts)
 keymap("n", "<Leader>tr", '<cmd>lua require("neotest").output.open({ enter = true })<CR>', opts)
+-- Debugging tests:
+-- keymap("n", "<Leader>ta", '<cmd>lua require("neotest").run.attach()<CR>', opts)
+-- keymap('n', '<Leader>td', '<cmd>lua require("neotest").run.run({ strategy = "dap" })<CR>', opts)

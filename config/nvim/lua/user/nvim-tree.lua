@@ -4,5 +4,8 @@ if not status_ok then
 end
 
 nvim_tree.setup({
-  hijack_netrw = false,
+  hijack_netrw = true,
+  view = {
+    adaptive_size = true,
+  }
 })

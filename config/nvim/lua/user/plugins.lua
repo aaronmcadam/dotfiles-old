@@ -93,8 +93,8 @@ return packer.startup(function(use)
 
 
   -- DAP debugging
-  use "mfussenegger/nvim-dap" -- DAP (Debug Adapter Protocol)
-  use "rcarriga/nvim-dap-ui" -- A UI for nvim-dap
+  -- use "mfussenegger/nvim-dap" -- DAP (Debug Adapter Protocol)
+  -- use "rcarriga/nvim-dap-ui" -- A UI for nvim-dap
 
   -- Testing
   -- Use a fork that wilkl automatically find the current Nx project.
