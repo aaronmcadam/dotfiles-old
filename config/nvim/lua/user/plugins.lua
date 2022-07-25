@@ -55,6 +55,9 @@ return packer.startup(function(use)
   use "ahmedkhalf/project.nvim" -- Projects
   use "nvim-lualine/lualine.nvim" -- Status line
 
+  --- Buffers
+  use "rgroli/other.nvim" -- Open related files in another buffer
+
   -- Completion
   use "hrsh7th/nvim-cmp" -- The completion plugin
   use "hrsh7th/cmp-buffer" -- buffer completions

@@ -7,5 +7,9 @@ nvim_tree.setup({
   hijack_netrw = true,
   view = {
     adaptive_size = true,
+  },
+  update_focused_file = {
+    enable = true,
+    update_cwd = true
   }
 })

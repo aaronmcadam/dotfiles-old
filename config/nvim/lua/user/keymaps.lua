@@ -38,7 +38,18 @@ keymap("n", "<Leader>fb", "<cmd>Telescope buffers<CR>", opts)
 
 -- Leader mappings
 keymap("n", "<Leader>e", "<cmd>NvimTreeFindFileToggle<CR>", opts)
+keymap("n", "-", "<cmd>NvimTreeFindFileToggle<CR>", opts)
+
 keymap("n", "<leader>gg", "<cmd>lua _LAZYGIT_TOGGLE()<CR>", opts)
+
+-- Related buffer navigation
+keymap("n", "<Leader>kk", "<cmd>Other<CR>", opts)
+keymap("n", "<Leader>kv", "<cmd>OtherVSplit<CR>", opts)
+keymap("n", "<Leader>kc", "<cmd>OtherClear<CR>", opts)
+keymap("n", "<Leader>kt", "<cmd>Other test<CR>", opts)
+keymap("n", "<Leader>ks", "<cmd>Other story<CR>", opts)
+keymap("n", "<Leader>ki", "<cmd>Other implementation<CR>", opts)
+
 keymap("n", "<Leader>q", "<cmd>Bdelete<CR>", opts)
 keymap("n", "<Leader>r", '<cmd>lua require("user.utils").reload_config()<CR>', opts)
 keymap("n", "<Leader>tt", '<cmd>lua require("neotest").run.run()<CR>', opts)
