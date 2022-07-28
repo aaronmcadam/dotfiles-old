@@ -100,11 +100,7 @@ return packer.startup(function(use)
   -- use "rcarriga/nvim-dap-ui" -- A UI for nvim-dap
 
   -- Testing
-  -- Use a fork that wilkl automatically find the current Nx project.
-  -- @see https://github.com/excalios/vim-test/commit/994450b27fd1b667a052bc13b7e80391e8132d93
-  use "excalios/vim-test"
   use "nvim-neotest/neotest"
-  use "nvim-neotest/neotest-vim-test"
   use "haydenmeade/neotest-jest"
 
   -- Colorschemes
