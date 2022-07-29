@@ -63,6 +63,10 @@ local function lsp_keymaps(bufnr)
   keymap(bufnr, "n", "<leader>ls", "<cmd>lua vim.lsp.buf.signature_help()<CR>", opts)
   -- Adds diagnostics to quickfix list.
   keymap(bufnr, "n", "<leader>lq", "<cmd>lua vim.diagnostic.setloclist()<CR>", opts)
+  -- TypeScript
+  keymap(bufnr, "n", "<leader>lo", "<cmd>TypescriptOrganizeImports<cr>", opts)
+  keymap(bufnr, "n", "<leader>li", "<cmd>TypescriptAddMissingImports<cr>", opts)
+  keymap(bufnr, "n", "<leader>lu", "<cmd>TypescriptRemoveUnused<cr>", opts)
 end
 
 M.on_attach = function(client, bufnr)

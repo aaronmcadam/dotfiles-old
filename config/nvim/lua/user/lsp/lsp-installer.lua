@@ -27,6 +27,11 @@ for _, server in pairs(servers) do
     capabilities = require("user.lsp.handlers").capabilities,
   }
 
+  -- add a special case for tsserver, since we want to go through typescript.nvim here
+  if server == "tsserver" then
+    require("typescript").setup({ server = opts })
+  end
+
   if server == "jsonls" then
     local jsonls_opts = require "user.lsp.settings.jsonls"
     opts = vim.tbl_deep_extend("force", jsonls_opts, opts)

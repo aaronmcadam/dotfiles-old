@@ -57,11 +57,7 @@ keymap("n", "<Leader>tf", '<cmd>lua require("neotest").run.run(vim.fn.expand("%"
 keymap("n", "<Leader>tl", '<cmd>lua require("neotest").run.run_last()<CR>', opts)
 keymap("n", "<Leader>ts", '<cmd>lua require("neotest").summary.toggle()<CR>', opts)
 keymap("n", "<Leader>tr", '<cmd>lua require("neotest").output.open({ enter = true })<CR>', opts)
+
 -- Debugging tests:
 -- keymap("n", "<Leader>ta", '<cmd>lua require("neotest").run.attach()<CR>', opts)
 -- keymap('n', '<Leader>td', '<cmd>lua require("neotest").run.run({ strategy = "dap" })<CR>', opts)
-
--- TypeScript
-keymap("n", "<leader>lo", "<cmd>TypescriptOrganizeImports<cr>", opts)
-keymap("n", "<leader>li", "<cmd>TypescriptAddMissingImports<cr>", opts)
-keymap("n", "<leader>lu", "<cmd>TypescriptRemoveUnused<cr>", opts)
