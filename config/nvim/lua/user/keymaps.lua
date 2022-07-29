@@ -60,3 +60,8 @@ keymap("n", "<Leader>tr", '<cmd>lua require("neotest").output.open({ enter = tru
 -- Debugging tests:
 -- keymap("n", "<Leader>ta", '<cmd>lua require("neotest").run.attach()<CR>', opts)
 -- keymap('n', '<Leader>td', '<cmd>lua require("neotest").run.run({ strategy = "dap" })<CR>', opts)
+
+-- TypeScript
+keymap("n", "<leader>lo", "<cmd>TypescriptOrganizeImports<cr>", opts)
+keymap("n", "<leader>li", "<cmd>TypescriptAddMissingImports<cr>", opts)
+keymap("n", "<leader>lu", "<cmd>TypescriptRemoveUnused<cr>", opts)
