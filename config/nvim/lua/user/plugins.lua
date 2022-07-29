@@ -67,13 +67,15 @@ return packer.startup(function(use)
   use "onsails/lspkind.nvim" -- vscode-like pictograms for neovim lsp completion items
 
   -- Snippets
-  use "L3MON4D3/LuaSnip" --snippet engine
+  use { 'L3MON4D3/LuaSnip', requires = { 'saadparwaiz1/cmp_luasnip' } } -- snippet engine
+  use "rafamadriz/friendly-snippets" -- snippets collection
 
   -- LSP programming language support
   use "neovim/nvim-lspconfig" -- enable LSP
   use "williamboman/nvim-lsp-installer" -- simple to use language server installer
   use "b0o/SchemaStore.nvim" -- JSON schemas
   use "jose-elias-alvarez/null-ls.nvim" -- for formatters and linters
+  use "jose-elias-alvarez/typescript.nvim" -- for TypeScript LSP commands
 
   -- Telescope
   use "nvim-telescope/telescope.nvim"
