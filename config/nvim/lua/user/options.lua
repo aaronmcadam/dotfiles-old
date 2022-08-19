@@ -33,7 +33,6 @@ local options = {
   signcolumn = "yes", -- always show the sign column, otherwise it would shift the text each time
   wrap = false, -- display lines as one long line
   guifont = "monospace:h17", -- the font used in graphical neovim applications
-  winbar = "%{%v:lua.require'nvim-navic'.get_location()%}" -- add navic LSP context
 }
 
 for key, value in pairs(options) do
