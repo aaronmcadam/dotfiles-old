@@ -12,12 +12,12 @@ end
 luasnip.config.set_config({
   history = true, -- Snippets that were exited can still be jumped back into
   -- Update more often, :h events for more info.
-	update_events = "TextChanged,TextChangedI",
+  update_events = "TextChanged,TextChangedI",
   -- Snippets aren't automatically removed if their text is deleted.
-	-- `delete_check_events` determines on which events (:h events) a check for
-	-- deleted snippets is performed.
-	-- This can be especially useful when `history` is enabled.
-	delete_check_events = "TextChanged",
+  -- `delete_check_events` determines on which events (:h events) a check for
+  -- deleted snippets is performed.
+  -- This can be especially useful when `history` is enabled.
+  delete_check_events = "TextChanged",
 })
 require("luasnip/loaders/from_vscode").lazy_load()
 
@@ -25,6 +25,8 @@ local lspkind_status_ok, lspkind = pcall(require, "lspkind")
 if not lspkind_status_ok then
   return
 end
+
+vim.api.nvim_set_hl(0, "CmpItemKindCopilot", { fg = "#6CC644" })
 
 cmp.setup({
   mapping = {
@@ -44,15 +46,16 @@ cmp.setup({
   },
   sources = {
     { name = 'luasnip' },
+    { name = 'copilot' },
     { name = 'nvim_lsp' },
     { name = 'path' },
     { name = 'buffer', keyword_length = 5 },
   },
   formatting = {
-    -- Youtube: How to set up nice formatting for your sources.
     format = lspkind.cmp_format {
       with_text = true,
       menu = {
+        Copilot = "",
         buffer = "[buf]",
         nvim_lsp = "[LSP]",
         path = "[path]",
