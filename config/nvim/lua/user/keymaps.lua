@@ -53,6 +53,7 @@ keymap("n", "<Leader>ki", "<cmd>OtherVSplit implementation<CR>", opts)
 keymap("n", "<Leader>q", "<cmd>Bdelete<CR>", opts)
 keymap("n", "<Leader>r", '<cmd>lua require("user.utils").reload_config()<CR>', opts)
 keymap("n", "<Leader>tt", '<cmd>lua require("neotest").run.run()<CR>', opts)
+keymap("n", "<Leader>td", '<cmd>lua require("neotest").run.run({ strategy = "dap" })<CR>', opts)
 keymap("n", "<Leader>tf", '<cmd>lua require("neotest").run.run(vim.fn.expand("%"))<CR>', opts)
 keymap("n", "<Leader>tl", '<cmd>lua require("neotest").run.run_last()<CR>', opts)
 keymap("n", "<Leader>ts", '<cmd>lua require("neotest").summary.toggle()<CR>', opts)
@@ -61,3 +62,14 @@ keymap("n", "<Leader>tr", '<cmd>lua require("neotest").output.open({ enter = tru
 -- Debugging tests:
 -- keymap("n", "<Leader>ta", '<cmd>lua require("neotest").run.attach()<CR>', opts)
 -- keymap('n', '<Leader>td', '<cmd>lua require("neotest").run.run({ strategy = "dap" })<CR>', opts)
+-- DAP
+keymap("n", "<leader>db", "<cmd>lua require'dap'.toggle_breakpoint()<cr>", opts)
+keymap("n", "<leader>dc", "<cmd>lua require'dap'.continue()<cr>", opts)
+keymap("n", "<leader>di", "<cmd>lua require'dap'.step_into()<cr>", opts)
+keymap("n", "<leader>do", "<cmd>lua require'dap'.step_over()<cr>", opts)
+keymap("n", "<leader>dO", "<cmd>lua require'dap'.step_out()<cr>", opts)
+keymap("n", "<leader>dr", "<cmd>lua require'dap'.repl.toggle()<cr>", opts)
+keymap("n", "<leader>dl", "<cmd>lua require'dap'.run_last()<cr>", opts)
+keymap("n", "<leader>du", "<cmd>lua require'dapui'.toggle()<cr>", opts)
+keymap("n", "<leader>dt", "<cmd>lua require'dap'.terminate()<cr>", opts)
+

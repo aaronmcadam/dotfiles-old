@@ -49,7 +49,7 @@ return packer.startup(function(use)
   use "moll/vim-bbye" -- delete buffers (close files) without closing your windows or messing up your layout.
   use "kyazdani42/nvim-web-devicons" -- Icons
   use "kyazdani42/nvim-tree.lua" -- A file explorer tree
-  use "ur4ltz/surround.nvim" -- Surround text objects
+  use "kylechui/nvim-surround" -- Surround text objects
   use "antoinemadec/FixCursorHold.nvim" -- This is needed to fix lsp doc highlight
   use "goolord/alpha-nvim" -- Dashboard
   use "ahmedkhalf/project.nvim" -- Projects
@@ -76,6 +76,7 @@ return packer.startup(function(use)
   use "b0o/SchemaStore.nvim" -- JSON schemas
   use "jose-elias-alvarez/null-ls.nvim" -- for formatters and linters
   use "jose-elias-alvarez/typescript.nvim" -- for TypeScript LSP commands
+  use "glepnir/lspsaga.nvim" -- shows a popup for things like code actions
 
   -- Telescope
   use "nvim-telescope/telescope.nvim"
@@ -98,8 +99,9 @@ return packer.startup(function(use)
 
 
   -- DAP debugging
-  -- use "mfussenegger/nvim-dap" -- DAP (Debug Adapter Protocol)
-  -- use "rcarriga/nvim-dap-ui" -- A UI for nvim-dap
+  use "mfussenegger/nvim-dap" -- DAP (Debug Adapter Protocol)
+  use "rcarriga/nvim-dap-ui" -- A UI for nvim-dap
+  use "ravenxrz/DAPInstall.nvim" -- manage debuggers for nvim-dap
 
   -- Testing
   use "nvim-neotest/neotest"
