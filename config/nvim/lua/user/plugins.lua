@@ -92,6 +92,7 @@ return packer.startup(function(use)
     "zbirenbaum/copilot-cmp",
     module = "copilot_cmp",
   }
+  use "SmiteshP/nvim-navic" -- winbar for code navigation
 
   -- Telescope
   use "nvim-telescope/telescope.nvim"

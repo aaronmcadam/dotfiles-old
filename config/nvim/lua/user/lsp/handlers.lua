@@ -76,6 +76,12 @@ M.on_attach = function(client, bufnr)
     return
   end
 
+  local status_navic_ok, navic = pcall(require, "nvim-navic")
+  if not status_navic_ok then
+    return
+  end
+  navic.attach(client, bufnr)
+
   -- Use prettier for formatting TypeScript.
   if client.name == "tsserver" then
     client.server_capabilities.document_formatting = false

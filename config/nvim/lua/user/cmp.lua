@@ -55,7 +55,6 @@ cmp.setup({
     format = lspkind.cmp_format {
       with_text = true,
       menu = {
-        Copilot = "",
         buffer = "[buf]",
         nvim_lsp = "[LSP]",
         path = "[path]",
