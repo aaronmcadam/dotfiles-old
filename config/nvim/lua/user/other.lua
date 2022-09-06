@@ -10,7 +10,7 @@ other.setup({
       pattern = "/(.*)/(.*).ts(.*)$",
       target = {
         {
-          target = "/%1/%2.spec.ts%3",
+          target = "/%1/%2.test.ts%3",
           context = "test"
         },
         {
@@ -20,7 +20,7 @@ other.setup({
       }
     },
     {
-      pattern = "/(.*)/(.*).spec.ts(.*)$",
+      pattern = "/(.*)/(.*).test.ts(.*)$",
       target = {
         {
           target = "/%1/%2.ts%3",
@@ -40,7 +40,7 @@ other.setup({
           context = "implementation"
         },
         {
-          target = "/%1/%2.spec.tsx",
+          target = "/%1/%2.test.tsx",
           context = "test"
         },
       }
