@@ -8,22 +8,14 @@ if not dap_ui_status_ok then
   return
 end
 
-local dap_install_status_ok, dap_install = pcall(require, "dap-install")
-if not dap_install_status_ok then
+local dap_vscode_js_status_ok, dap_vscode_js = pcall(require, "dap-vscode-js")
+if not dap_vscode_js_status_ok then
   return
 end
 
-dap.adapters.node2 = {
-    type = 'executable',
-    command = 'node',
-    args = {
-        vim.fn.stdpath("data") .. "/dapinstall/jsnode_dbg/" ..
-            '/vscode-node-debug2/out/src/nodeDebug.js'
-    }
-}
-
-dap_install.setup()
-dap_install.config("jsnode", {})
+dap_vscode_js.setup({
+  adapters = { 'pwa-node' }
+})
 
 dapui.setup()
 

@@ -117,7 +117,12 @@ return packer.startup(function(use)
   -- DAP debugging
   use "mfussenegger/nvim-dap" -- DAP (Debug Adapter Protocol)
   use "rcarriga/nvim-dap-ui" -- A UI for nvim-dap
-  use "ravenxrz/DAPInstall.nvim" -- manage debuggers for nvim-dap
+  use "mxsdev/nvim-dap-vscode-js" -- nvim-dap adapter for vscode-js-debug 
+  use {
+    "microsoft/vscode-js-debug",
+    opt = true,
+    run = "npm install --legacy-peer-deps && npm run compile"
+  }
 
   -- Testing
   use "nvim-neotest/neotest"
