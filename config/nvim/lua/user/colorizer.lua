@@ -3,6 +3,9 @@ if not status_ok then
   return
 end
 
-colorizer.setup({ '*' }, {
-  names = false, -- "Name" codes like "Blue" or "blue"
+colorizer.setup({
+  filtypes = { "*" },
+  user_default_options = {
+    names = false, -- "Name" codes like "Blue" or "blue"
+  }
 })

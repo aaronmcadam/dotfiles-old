@@ -8,6 +8,12 @@ if not luasnip_status_ok then
   return
 end
 
+--[[ local copilot_cmp_status_ok, copilot_cmp = pcall(require, "copilot_cmp") ]]
+--[[ if not copilot_cmp_status_ok then ]]
+--[[   return ]]
+--[[ end ]]
+--[[ copilot_cmp.setup() ]]
+
 -- @see https://github.com/L3MON4D3/LuaSnip/blob/master/Examples/snippets.lua
 luasnip.config.set_config({
   history = true, -- Snippets that were exited can still be jumped back into

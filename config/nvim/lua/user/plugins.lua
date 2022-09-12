@@ -78,20 +78,6 @@ return packer.startup(function(use)
   use "jose-elias-alvarez/null-ls.nvim" -- for formatters and linters
   use "jose-elias-alvarez/typescript.nvim" -- for TypeScript LSP commands
   use "glepnir/lspsaga.nvim" -- shows a popup for things like code actions
-  -- use "github/copilot.vim" -- official GitHub Copilot plugin. We only need this to authenticate. We can remove it after we do that.
-  use {
-    "zbirenbaum/copilot.lua",
-    event = { "VimEnter" },
-    config = function()
-      vim.defer_fn(function()
-        require("copilot").setup()
-      end, 100)
-    end,
-  }
-  use {
-    "zbirenbaum/copilot-cmp",
-    module = "copilot_cmp",
-  }
   use "SmiteshP/nvim-navic" -- winbar for code navigation
 
   -- Telescope

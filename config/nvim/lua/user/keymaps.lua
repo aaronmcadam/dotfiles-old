@@ -24,6 +24,8 @@ keymap("n", "<A-Down>", ":resize +2<CR>", opts)
 keymap("n", "<A-Left>", ":vertical resize -2<CR>", opts)
 keymap("n", "<A-Right>", ":vertical resize +2<CR>", opts)
 
+keymap("n", "<Leader><Leader>", "<cmd>noh<CR>", opts)
+
 -- Telescope
 -- Find file
 keymap("n", "<Leader>ff", "<cmd>lua require('user.telescope').project_files()<CR>", opts)
