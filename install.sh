@@ -43,6 +43,7 @@ asdf install
 
 # Install Yarn with NPM
 npm install --global yarn
+npm install -g eslint_d
 
 # TODO: We need to change the shell to fish to access the omf command.
 # fish_add_path /opt/homebrew/bin
