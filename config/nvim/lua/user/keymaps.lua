@@ -24,8 +24,6 @@ keymap("n", "<A-Down>", ":resize +2<CR>", opts)
 keymap("n", "<A-Left>", ":vertical resize -2<CR>", opts)
 keymap("n", "<A-Right>", ":vertical resize +2<CR>", opts)
 
-keymap("n", "<Leader><Leader>", "<cmd>noh<CR>", opts)
-
 -- Telescope
 -- Find file
 keymap("n", "<Leader>ff", "<cmd>lua require('user.telescope').project_files()<CR>", opts)
@@ -41,6 +39,7 @@ keymap("n", "<Leader>fb", "<cmd>Telescope buffers<CR>", opts)
 -- Leader mappings
 keymap("n", "<Leader>e", "<cmd>NvimTreeFindFileToggle<CR>", opts)
 keymap("n", "-", "<cmd>NvimTreeFindFileToggle<CR>", opts)
+keymap("n", "<Leader><Leader>", "<cmd>noh<CR>", opts)
 
 keymap("n", "<leader>gg", "<cmd>lua _LAZYGIT_TOGGLE()<CR>", opts)
 
@@ -74,4 +73,3 @@ keymap("n", "<leader>dr", "<cmd>lua require'dap'.repl.toggle()<cr>", opts)
 keymap("n", "<leader>dl", "<cmd>lua require'dap'.run_last()<cr>", opts)
 keymap("n", "<leader>du", "<cmd>lua require'dapui'.toggle()<cr>", opts)
 keymap("n", "<leader>dt", "<cmd>lua require'dap'.terminate()<cr>", opts)
-
