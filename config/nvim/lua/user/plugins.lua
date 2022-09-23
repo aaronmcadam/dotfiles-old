@@ -86,12 +86,14 @@ return packer.startup(function(use)
   use { 'nvim-telescope/telescope-fzf-native.nvim',
     run = 'make'
   }
+  use "ThePrimeagen/harpoon" -- mark files to navigate between
 
   -- Treesitter
   use {
     "nvim-treesitter/nvim-treesitter",
     run = ":TSUpdate",
   }
+  use "nvim-treesitter/nvim-treesitter-context"
   use "windwp/nvim-autopairs" -- Autopairs, integrates with both cmp and treesitter
   use "windwp/nvim-ts-autotag"
 

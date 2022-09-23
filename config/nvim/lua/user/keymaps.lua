@@ -24,6 +24,17 @@ keymap("n", "<A-Down>", ":resize +2<CR>", opts)
 keymap("n", "<A-Left>", ":vertical resize -2<CR>", opts)
 keymap("n", "<A-Right>", ":vertical resize +2<CR>", opts)
 
+-- Leader mappings
+keymap("n", "<Leader>e", "<cmd>NvimTreeFindFileToggle<CR>", opts)
+keymap("n", "-", "<cmd>NvimTreeFindFileToggle<CR>", opts)
+keymap("n", "<Leader><Leader>", "<cmd>noh<CR>", opts)
+-- Better paste that we don't lose what was in the paste register when we paste to replace text.
+-- If we're in some visual mode and we do a delete to the "_" register and then it will paste the text.
+-- @see https://youtu.be/qZO9A5F6BZs?t=352
+keymap("x", "<Leader>p", "\"_dP", opts)
+
+keymap("n", "<leader>gg", "<cmd>lua _LAZYGIT_TOGGLE()<CR>", opts)
+
 -- Telescope
 -- Find file
 keymap("n", "<Leader>ff", "<cmd>lua require('user.telescope').project_files()<CR>", opts)
@@ -35,13 +46,16 @@ keymap("n", "<Leader>ft", "<cmd>Telescope live_grep<CR>", opts)
 keymap("n", "<Leader>fw", "<cmd>Telescope grep_string<CR>", opts)
 -- Find buffer
 keymap("n", "<Leader>fb", "<cmd>Telescope buffers<CR>", opts)
+-- Go to definition
+keymap("n", "<Leader>fd", "<cmd>lua require('telescope.builtin').lsp_definitions({ jump_type='vsplit' })<CR>", opts)
+keymap("n", "<c-]>", "<cmd>lua require('telescope.builtin').lsp_definitions({ jump_type='vsplit' })<CR>", opts)
+keymap("n", "gs", "<cmd>lua require('telescope.builtin').lsp_definitions({ jump_type='split' })<CR>", opts)
+-- Harpoon marks
+keymap("n", "<Leader>fm", "<cmd>Telescope harpoon marks<CR>", opts)
 
--- Leader mappings
-keymap("n", "<Leader>e", "<cmd>NvimTreeFindFileToggle<CR>", opts)
-keymap("n", "-", "<cmd>NvimTreeFindFileToggle<CR>", opts)
-keymap("n", "<Leader><Leader>", "<cmd>noh<CR>", opts)
-
-keymap("n", "<leader>gg", "<cmd>lua _LAZYGIT_TOGGLE()<CR>", opts)
+-- Harpoon
+keymap("n", "<Leader>hm", "<cmd>lua require('harpoon.mark').add_file()<CR>", opts)
+keymap("n", "<Leader>hh", "<cmd>lua require('harpoon.ui').toggle_quick_menu()<CR>", opts)
 
 -- Related buffer navigation
 keymap("n", "<Leader>kk", "<cmd>Other<CR>", opts)
@@ -51,14 +65,14 @@ keymap("n", "<Leader>kt", "<cmd>OtherVSplit test<CR>", opts)
 keymap("n", "<Leader>ks", "<cmd>OtherVSplit story<CR>", opts)
 keymap("n", "<Leader>ki", "<cmd>OtherVSplit implementation<CR>", opts)
 
-keymap("n", "<Leader>q", "<cmd>Bdelete<CR>", opts)
-keymap("n", "<Leader>r", '<cmd>lua require("user.utils").reload_config()<CR>', opts)
-keymap("n", "<Leader>tt", '<cmd>lua require("neotest").run.run()<CR>', opts)
-keymap("n", "<Leader>td", '<cmd>lua require("neotest").run.run({ strategy = "dap" })<CR>', opts)
-keymap("n", "<Leader>tf", '<cmd>lua require("neotest").run.run(vim.fn.expand("%"))<CR>', opts)
-keymap("n", "<Leader>tl", '<cmd>lua require("neotest").run.run_last()<CR>', opts)
-keymap("n", "<Leader>ts", '<cmd>lua require("neotest").summary.toggle()<CR>', opts)
-keymap("n", "<Leader>tr", '<cmd>lua require("neotest").output.open({ enter = true })<CR>', opts)
+keymap("n", "<Leader>q", "<cmd>qa<CR>", opts)
+keymap("n", "<Leader>r", "<cmd>lua require('user.utils').reload_config()<CR>", opts)
+keymap("n", "<Leader>tt", "<cmd>lua require('neotest').run.run()<CR>", opts)
+keymap("n", "<Leader>td", "<cmd>lua require('neotest').run.run({ strategy = 'dap' })<CR>", opts)
+keymap("n", "<Leader>tf", "<cmd>lua require('neotest').run.run(vim.fn.expand('%'))<CR>", opts)
+keymap("n", "<Leader>tl", "<cmd>lua require('neotest').run.run_last()<CR>", opts)
+keymap("n", "<Leader>ts", "<cmd>lua require('neotest').summary.toggle()<CR>", opts)
+keymap("n", "<Leader>tr", "<cmd>lua require('neotest').output.open({ enter = true })<CR>", opts)
 
 -- Debugging tests:
 -- keymap("n", "<Leader>ta", '<cmd>lua require("neotest").run.attach()<CR>', opts)
