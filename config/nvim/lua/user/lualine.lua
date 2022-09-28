@@ -14,5 +14,8 @@ lualine.setup({
       { 'filename' },
       { navic.get_location, cond = navic.is_available },
     }
+  },
+  options = {
+		theme = "catppuccin"
   }
 })

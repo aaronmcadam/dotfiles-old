@@ -3,4 +3,6 @@ if not status_ok then
   return
 end
 
-navic.setup()
+navic.setup({
+  highlight = true
+})
