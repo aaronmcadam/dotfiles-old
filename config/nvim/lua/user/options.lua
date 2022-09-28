@@ -1,6 +1,6 @@
 local options = {
   backup = false, -- creates a backup file
-  clipboard = "unnamedplus", -- allows neovim to access the system clipboard
+  clipboard = "", -- explicitly copy to the clipboard to keep control of what gets copied there.
   cmdheight = 1, -- more space in the neovim command line for displaying messages
   completeopt = { "menu", "menuone", "noselect" }, -- mostly just for cmp
   conceallevel = 0, -- so that `` is visible in markdown files
@@ -38,3 +38,7 @@ local options = {
 for key, value in pairs(options) do
   vim.opt[key] = value
 end
+
+-- netrw
+vim.g.netrw_banner = 0
+vim.g.netrw_winsize = 25

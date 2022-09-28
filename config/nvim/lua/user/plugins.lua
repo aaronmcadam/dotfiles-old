@@ -48,7 +48,6 @@ return packer.startup(function(use)
   use "JoosepAlviste/nvim-ts-context-commentstring" -- TSX support in comments
   use "moll/vim-bbye" -- delete buffers (close files) without closing your windows or messing up your layout.
   use "kyazdani42/nvim-web-devicons" -- Icons
-  use "kyazdani42/nvim-tree.lua" -- A file explorer tree
   use "kylechui/nvim-surround" -- Surround text objects
   use "antoinemadec/FixCursorHold.nvim" -- This is needed to fix lsp doc highlight
   use "goolord/alpha-nvim" -- Dashboard
@@ -105,7 +104,7 @@ return packer.startup(function(use)
   -- DAP debugging
   use "mfussenegger/nvim-dap" -- DAP (Debug Adapter Protocol)
   use "rcarriga/nvim-dap-ui" -- A UI for nvim-dap
-  use "mxsdev/nvim-dap-vscode-js" -- nvim-dap adapter for vscode-js-debug 
+  use "mxsdev/nvim-dap-vscode-js" -- nvim-dap adapter for vscode-js-debug
   use {
     "microsoft/vscode-js-debug",
     opt = true,

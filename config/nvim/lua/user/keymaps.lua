@@ -1,6 +1,4 @@
 local opts = { noremap = true, silent = true }
-
--- Shorten function name
 local keymap = vim.keymap.set
 
 --Remap space as leader key
@@ -18,6 +16,13 @@ keymap("n", "<C-j>", "<C-w>j", opts)
 keymap("n", "<C-k>", "<C-w>k", opts)
 keymap("n", "<C-l>", "<C-w>l", opts)
 
+-- File navigation
+keymap("n", "-", ":Ex<CR>", opts)
+
+-- Less jarring paging
+keymap("n", "<C-u>", "<C-u>zz", opts)
+keymap("n", "<C-d>", "<C-d>zz", opts)
+
 -- Resize with arrows
 keymap("n", "<A-Up>", ":resize -2<CR>", opts)
 keymap("n", "<A-Down>", ":resize +2<CR>", opts)
@@ -25,14 +30,24 @@ keymap("n", "<A-Left>", ":vertical resize -2<CR>", opts)
 keymap("n", "<A-Right>", ":vertical resize +2<CR>", opts)
 
 -- Leader mappings
-keymap("n", "<Leader>e", "<cmd>NvimTreeFindFileToggle<CR>", opts)
-keymap("n", "-", "<cmd>NvimTreeFindFileToggle<CR>", opts)
 keymap("n", "<Leader><Leader>", "<cmd>noh<CR>", opts)
--- Better paste that we don't lose what was in the paste register when we paste to replace text.
--- If we're in some visual mode and we do a delete to the "_" register and then it will paste the text.
--- @see https://youtu.be/qZO9A5F6BZs?t=352
-keymap("x", "<Leader>p", "\"_dP", opts)
 
+-- Better paste that doesn't lose what was in the paste register when we want to replace the selected text.
+-- We delete to the Black Hole register ("_") so that our paste register will keep the text that we copied.
+-- @see https://youtu.be/qZO9A5F6BZs?t=352
+keymap("n", "<Leader>p", "\"_dP", opts)
+keymap("v", "<Leader>p", "\"_dP", opts)
+
+-- Better delete
+keymap("n", "<Leader>d", "\"_d")
+keymap("v", "<Leader>d", "\"_d")
+
+--- copy to system clipboard
+keymap("n", "<Leader>y", "\"+y", opts)
+keymap("n", "<Leader>Y", "\"+Y", opts)
+keymap("v", "<Leader>y", "\"+y", opts)
+
+-- Lazygit
 keymap("n", "<leader>gg", "<cmd>lua _LAZYGIT_TOGGLE()<CR>", opts)
 
 -- Telescope
